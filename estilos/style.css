@@ -46,10 +46,12 @@ main{
 }
 
 #redes-sociais{
-    position: fixed; /* é ideal para posicionar ícones no canto da tela de forma permanente, independentemente de rolagem. */
-    top: 25%; /* Centraliza verticalmente */
-    right: 7px; /* Fixa no lado direito */
-    transform: translateY(-50%); /* Ajusta para o centro exato */}
+    /* position: fixed; */ /* é ideal para posicionar ícones no canto da tela de forma permanente, independentemente de rolagem. */
+    /* top: 25%; */ /* Centraliza verticalmente */
+    /* right: 7px; */ /* Fixa no lado direito */
+    /* transform: translateY(-50%); */ /* Ajusta para o centro exato */
+    text-align: right;
+}
 
 #redes-sociais img{
     width: 50px;
