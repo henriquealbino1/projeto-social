@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    background: url('../imagens/fundo-madeira.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#telefone{
+    /* AQUI EU CENTRALIZEI O TELEFONE NA TELA */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+
+/*AQUI AJUSTEI O TAMANHO COM REFERENCIA AO TAMANHO DA IMAGEM DO CELULAR OLHANDO EM PROPRIEDADES DA MESMA*/    
+    width: 311px;
+    height: 627px;
+    background-color: blue;
+    background: url('../imagens/frame-iphone.png');
+    background-repeat: no-repeat;
+}
+
+/* AQUI ESTOU USANDO O IFRAME PARA COLOCAR A TELA DENTRO DO CELULAR*/
+#tela{
+    position: relative;
+    top: 80px;
+    left: 23px;
+    height: 470px;
+    width: 268px;
+}
+
+#redes-sociais{
+    position: fixed; /* é ideal para posicionar ícones no canto da tela de forma permanente, independentemente de rolagem. */
+    top: 25%; /* Centraliza verticalmente */
+    right: 7px; /* Fixa no lado direito */
+    transform: translateY(-50%); /* Ajusta para o centro exato */}
+
+#redes-sociais img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.644);
+}
+
+#redes-sociais img:hover {
+    /* Amplia o ícone ao passar o mouse */
+    transform: scale(1.1);
+}
